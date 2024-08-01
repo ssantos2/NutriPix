@@ -16,8 +16,8 @@ preprocess = T.Compose([
 
 # Food API for calorie information
 FOOD_API_ENDPOINT = "https://api.edamam.com/api/food-database/v2/parser"
-APP_ID = "b57f8c4a"  # Replace with your Edamam Application ID
-API_KEY = "e700315d0cecfaccdfa460b27451ce99"  # Replace with your Edamam API Key
+APP_ID = "APP_ID"  # Replace with your Edamam Application ID
+API_KEY = "API_KEY"  # Replace with your Edamam API Key
 
 # COCO class labels
 COCO_INSTANCE_CATEGORY_NAMES = [
