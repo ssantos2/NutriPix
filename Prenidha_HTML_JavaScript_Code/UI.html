@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Calorie Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="homePage" class="page">
+        <header>
+            <h1>Welcome to Nutripix - AI Calorie Tracker</h1>
+        </header>
+        <main>
+            <div class="login-section">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <button onclick="login()">Login</button>
+                <div id="loginError" class="error-message"></div>
+            </div>
+        </main>
+    </div>
+
+    <div id="trackerPage" class="page hidden">
+        <header>
+            <h1>Nutripix - AI Calorie Tracker</h1>
+            <button onclick="logout()">Logout</button>
+        </header>
+        <main>
+            <div class="input-section">
+                <label for="imageUpload" class="upload-label">Choose Image</label>
+                <input type="file" id="imageUpload" accept="image/*" onchange="uploadImage()">
+            </div>
+            <div id="imagePreview" class="image-preview"></div>
+            <div id="results" class="results"></div>
+        </main>
+        <footer>
+            <p>Powered by Clarifai</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
